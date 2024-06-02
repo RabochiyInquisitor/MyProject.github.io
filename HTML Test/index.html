@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>
+            ShipsDevelopment
+        </title>
+        <link rel="stylesheet" href="main.css">
+        <base href=" http://testsait.html"> 
+    </head>
+    <body>
+        <div id="edinitsy">0</div>
+        <div id="decyatki">0</div>
+        <div id="datenow">01.04.2024...</div>
+        <input type = "submit" value = "Нет, он был сегодня:)" id = "myButton">
+        <script>
+           // Получаем элементы из DOM
+const EdEl = document.getElementById("edinitsy");
+const DeEl = document.getElementById("decyatki");
+const datenowEl = document.getElementById("datenow"); // Элемент для отображения даты
+
+// Загрузка данных из localStorage
+let edinitsy = 0; // Или 0, если данных нет
+let decyatki = 0; // Переменная для десятков
+
+// Задаем начальную дату
+const startDate = new Date('2024-06-01'); // Измените на нужную дату
+
+// Функция для обновления счетчика
+function updateCounter() {
+    if(!localStorage.getItem('data'))
+    {
+        resetCounter();
+    }
+    const StDate = new Date(localStorage.getItem('data')|| new Date())
+    // Получаем текущую дату
+    const currentDate = new Date(); 
+   
+    // Вычисляем разницу в днях
+    const differenceInDays = Math.floor((currentDate - StDate) / (1000 * 60 * 60 * 24));
+    
+    // Обновляем счетчик
+    edinitsy = (differenceInDays % 10); // Остаток от деления на 10 или сохраненное значение
+    decyatki = Math.floor(differenceInDays / 10); // Целая часть от деления на 10
+
+    // Обновляем отображение счетчика
+    EdEl.textContent = edinitsy;
+    DeEl.textContent = decyatki;
+
+    // Сохраняем значение в localStorage
+    
+
+}
+
+// Первоначальное обновление счетчика и даты
+updateCounter();
+datenowEl.textContent = new Date().toLocaleDateString();
+
+// Запуск таймера для обновления счетчика каждый день
+setInterval(() => {
+    updateCounter();
+    datenowEl.textContent = new Date().toLocaleDateString();
+},  60 * 1000); // 24 часа в миллисекундах
+
+function resetCounter() {
+    edinitsy = 0;
+    decyatki = 0;
+    localStorage.setItem('data', new Date());
+    EdEl.textContent = edinitsy;
+    DeEl.textContent = decyatki;
+}
+
+// Обработчик события для кнопки "Сбросить"
+document.getElementById('myButton').addEventListener('click', resetCounter);
+
+        </script>
+        <div class="main_text">Дней без инциндент репорта</div>
+    </body>
+</html>
