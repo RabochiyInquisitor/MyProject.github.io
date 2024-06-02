@@ -1,3 +1,4 @@
+<<<<<<< HEAD:HTML Test/main.css
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
@@ -249,3 +250,86 @@ body {
     cursor: pointer;
 }
 } 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-color: black;
+    background-size: cover; /* чтобы изображение занимало весь экран */
+    
+}
+
+
+.main_text {
+    position: absolute;
+    top: 436;
+    left: 700;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+  }
+
+
+#decyatki{
+    position: absolute;
+    top: 436;
+    left: 100;
+    padding: 20px 90px; /* Поля вокруг текста */
+    background-color: #2F2F2F; /* Цвет фона */
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: inline-block;
+}
+#edinitsy{
+    position: absolute;
+    top: 436;
+    left: 370;
+    padding: 20px 90px; /* Поля вокруг текста */
+    background-color: #2F2F2F; /* Цвет фона */
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: inline-block;
+}
+#datenow{
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+}
+#myButton{
+    position: absolute;
+    top: 700;
+    left: 1300;
+    border-radius: 30px;
+    border: black;
+    background-color: #2F2F2F;
+    color: white;
+    width: 357; /* Ширина */
+    height: 107; /* Высота */
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+#MyButton:hover{
+    position: absolute;
+    top: 675;
+    left: 1300;
+    width: 407; /* Ширина */
+    height: 157; /* Высота */
+    cursor: pointer;
+}
+>>>>>>> e24251aea9a43494fcf80eb8fa023f5ed9fad3c8:main.css
