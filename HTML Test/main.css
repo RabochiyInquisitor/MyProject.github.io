@@ -58,7 +58,7 @@ body {
     font-style: normal;
     font-size: 64px;
 }
-#myButton{
+.myButton{
     position: absolute;
     top: 700;
     left: 1300;
@@ -73,7 +73,7 @@ body {
     font-style: normal;
     font-size: 32px;
 }
-#MyButton:hover{
+.myButton:hover{
     position: absolute;
     top: 675;
     left: 1300;
@@ -81,7 +81,7 @@ body {
     height: 157; /* Высота */
     cursor: pointer;
 }
-@media  (max-width: 768) {
+@media (max-width: 767px) {
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
@@ -104,7 +104,7 @@ body {
   }
 
 
-#decyatki{
+.decyatki{
     position: absolute;
     top: 200;
     left: 80;
@@ -119,7 +119,7 @@ body {
     border-radius: 15px;
     display: inline-block;
 }
-#edinitsy{
+.edinitsy{
     position: absolute;
     top: 200;
     left: 200;
@@ -134,7 +134,7 @@ body {
     border-radius: 15px;
     display: inline-block;
 }
-#datenow{
+.datenow{
     position: absolute;
     top: 62;
     left: 20;
@@ -144,7 +144,7 @@ body {
     font-style: normal;
     font-size: 64px;
 }
-#myButton{
+.myButton{
     position: absolute;
     top: 550;
     left: 100;
@@ -159,7 +159,7 @@ body {
     font-style: normal;
     font-size: 10x;
 }
-#MyButton:hover{
+.MyButton:hover{
     position: absolute;
     top: 675;
     left: 1300;
@@ -167,4 +167,4 @@ body {
     height: 207; /* Высота */
     cursor: pointer;
 }
-} 
+}
