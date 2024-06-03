@@ -21,7 +21,7 @@ body {
   }
 
 
-#decyatki{
+.decyatki{
     position: absolute;
     top: 436;
     left: 100;
@@ -36,7 +36,7 @@ body {
     border-radius: 30px;
     display: inline-block;
 }
-#edinitsy{
+.edinitsy{
     position: absolute;
     top: 436;
     left: 370;
@@ -51,7 +51,7 @@ body {
     border-radius: 30px;
     display: inline-block;
 }
-#datenow{
+.datenow{
     color: white;
     font-family: "Pacifico", cursive;
     font-weight: 400;
@@ -157,7 +157,7 @@ body {
     font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 10x;
+    font-size: 10px;
 }
 .MyButton:hover{
     position: absolute;
